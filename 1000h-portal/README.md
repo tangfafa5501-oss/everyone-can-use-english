@@ -1,75 +1,25 @@
-# Nuxt 3 Minimal Starter
+# 1000h Portal
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+`1000h-portal` 是 1000h.org 根路径使用的 Nuxt 门户页。它生成静态文件，再由 Cloudflare Worker 或阿里云 OSS 提供服务。
 
-## Setup
+## 本地开发
 
-Make sure to install the dependencies:
-
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+先在仓库根目录安装依赖：
 
 ```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
+yarn install --immutable
+yarn portal:dev
 ```
 
-## Production
+默认开发地址为 `http://localhost:3000`。
 
-Build the application for production:
+## 构建与预览
 
 ```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+yarn portal:generate
+yarn portal:preview
 ```
 
-Locally preview production build:
+生成结果位于 `.output/public`。页面修改主要位于 `pages/`、`components/`、`layouts/` 和 `styles/`。
 
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+正式部署配置见 `wrangler.toml` 和仓库的 `.github/workflows/deploy-1000h-portal*.yml`。本地开发不需要 Cloudflare 或阿里云凭据。

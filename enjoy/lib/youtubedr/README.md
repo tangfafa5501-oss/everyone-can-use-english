@@ -59,7 +59,7 @@ $ youtubedr download https://www.youtube.com/watch?v=rFejpH_tAHM
 ```
 ### Use this package in your golang program
 
-Please check out the [example_test.go](example_test.go) for example code.
+Please check out the [upstream example_test.go](https://github.com/kkdai/youtube/blob/master/example_test.go) for example code.
 ## Example:
  * ### Get information of dotGo-2015-rob-pike video for downloading
 
