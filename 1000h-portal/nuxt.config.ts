@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ["~/styles/main.css"],
   site: {
-    url: "https://example.com",
+    url: "https://1000h.org",
     name: "Enjoy App",
     description: "Welcome to Enjoy App!",
     tagline: "",

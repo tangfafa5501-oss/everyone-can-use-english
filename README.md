@@ -36,6 +36,17 @@ Enjoy 浏览器插件已经上线，支持 YouTube 和 Netflix。可访问 [Chro
 
 新版桌面版将会是对网页版的套壳和增强，即将发布。
 
+## 开发与维护
+
+本仓库是一个 Yarn monorepo，包含 Enjoy 桌面端、1000 小时内容站、门户页和 Cloudflare Worker 入口。
+
+- [开发环境与启动说明](./DEVELOPMENT.md)
+- [项目架构](./ARCHITECTURE.md)
+- [参与贡献](./CONTRIBUTING.md)
+- [Enjoy 桌面端说明](./enjoy/README.md)
+
+> 注意：Enjoy 的云端 API、WebSocket 服务和网页版源码不在本仓库中。本仓库可以独立开发桌面端的本地能力和两个静态站点；完整联调云端账号、同步、社区及托管 AI 服务时，需要可用的 Enjoy 后端。
+
 
 ## 相关阅读
 

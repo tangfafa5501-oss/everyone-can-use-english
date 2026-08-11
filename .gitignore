@@ -94,6 +94,9 @@ typings/
 # Electron-Forge
 out/
 
+# Local release installers copied to the repository root
+/*Setup.exe
+
 # bun & npm lock file
 bun.lockb
 package-lock.json
