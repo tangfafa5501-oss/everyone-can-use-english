@@ -3,7 +3,7 @@
 ## 必需环境
 
 - Git
-- Node.js 20 或更高版本
+- Node.js 22 或更高的受支持 LTS 版本
 - 仓库固定的 Yarn 4.6.0；不要混用 npm、pnpm 或 Bun 更新依赖
 - 至少数 GB 可用磁盘空间，用于依赖、Electron 打包结果和可选语音模型
 
@@ -15,14 +15,15 @@ yarn --version
 yarn install --immutable
 ```
 
-预期 Yarn 版本为 `4.6.0`。`--immutable` 可避免安装过程意外修改锁文件。
+预期 Yarn 版本为 `4.6.0`。`--immutable` 可避免安装过程意外修改锁文件。Node.js 20 已停止官方安全维护，因此不再作为推荐开发环境。
 
 ## 平台注意事项
 
 ### Windows
 
-- 推荐 Node.js 20 x64、Git for Windows 和 PowerShell。
+- 推荐 Node.js 22 x64、Git for Windows 和 PowerShell。
 - 必须通过 Yarn 运行仓库脚本；Yarn 的可移植脚本环境会处理项目中使用的类 Unix 环境变量语法。
+- 如果 PowerShell 执行策略阻止 `npm.ps1` 或 `yarn.ps1`，请使用 `npm.cmd`、`yarn.cmd`；无需为了运行本项目而放宽系统执行策略。
 - 如果 `sqlite3` 等原生模块没有可用的预编译包，需要安装 Python 3 和 Visual Studio Build Tools 的“使用 C++ 的桌面开发”组件。
 
 ### macOS

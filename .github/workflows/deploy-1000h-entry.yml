@@ -29,7 +29,7 @@ jobs:
       - name: Setup node env
         uses: actions/setup-node@master
         with:
-          node-version: "20"
+          node-version: "22"
 
       - name: Deploy
         uses: cloudflare/wrangler-action@v3
